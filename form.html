@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Elena's CV</title>
+  <meta name="Elena Piaggio" content="uoc vue student" />
+  <meta name="description" content="First html and css exercise" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div id="container">
+    <nav id="topnav">
+      <a href="index.html">Home</a> | <a href="cv.html">CV</a> |
+      <a href="form.html">Contact</a> |
+      <a href="thanks.html">Thanks</a>
+    </nav>
+    <h1>Contact</h1>
+    <section>
+      <form action="./thanks.html" method="post">
+        <fieldset>
+          <legend>Si quieres contactarme, rellena este formulario</legend>
+          <div>
+            <ul>
+              <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="user_mail" />
+              </li>
+              <li>
+                <label for="tentacles">Código Postal:</label>
+                <input type="postal" id="postal" name="postal" min="0" max="99999" />
+              </li>
+              <li>
+                <label for="edat">Rango de edad:</label> <br />
+                <input type="checkbox" id="cbox2" value="second_checkbox" />
+                <label for="cbox2">18 - 25 años</label>
+                <br />
+                <input type="checkbox" id="cbox2" value="second_checkbox" />
+                <label for="cbox2">26 - 35 años</label><br />
+                <input type="checkbox" id="cbox2" value="second_checkbox" />
+                <label for="cbox2">36 - 45 años</label>
+              </li>
+              <li>
+                <label for="lang">Elige tecnología:</label>
+                <select name="lenguajes" id="lang">
+                  <option value="front">Frontend</option>
+                  <option value="back">Backend</option>
+                  <option value="data">Data Science</option>
+                  <option value="full">FullStack</option>
+                  <option value="android">Android</option>
+                </select>
+              </li>
+              <li>
+                <label for="mail">¿Cómo prefieres que te contacte?</label> <br />
+                <input type="radio" id="contactChoice1" name="contact" value="email" />
+                <label for="contactChoice1">Email</label>
+
+                <input type="radio" id="contactChoice2" name="contact" value="phone" />
+                <label for="contactChoice2">Phone</label>
+
+                <input type="radio" id="contactChoice3" name="contact" value="mail" />
+                <label for="contactChoice3">Mail</label>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <button onclick="thanks.html" type="submit">
+              Submit
+            </button>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </div>
+</body>
+
+</html>
